@@ -14,7 +14,7 @@ var middleware={
 app.use(middleware.requireAuthentication);
 app.use(middleware.test);
 app.get ('/about',function(req,res){
-	res.send('This is about Express!');
+	res.send('This is about Express!!!');
 });
 app.use(express.static(__dirname+'/public'));
 app.listen(3000, function(){
